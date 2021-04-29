@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rizvi5a/prof-readme/issues"
   },
-  "homepage": "https://github.com/rizvi5a/prof-readme#readme"
+  "homepage": "https://github.com/rizvi5a/prof-readme#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
 }
