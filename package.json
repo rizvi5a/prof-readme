@@ -1,0 +1,19 @@
+{
+  "name": "prof-readme",
+  "version": "1.0.0",
+  "description": "README.md",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizvi5a/prof-readme.git"
+  },
+  "author": "Syed Rizvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizvi5a/prof-readme/issues"
+  },
+  "homepage": "https://github.com/rizvi5a/prof-readme#readme"
+}
