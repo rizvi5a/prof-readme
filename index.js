@@ -44,6 +44,10 @@ ${userresponse.description}
 
 `
     console.log(fileContent)
+    fs.writeFileSync("README.md",fileContent,function(err){
+        if (err) throw err;
+        console.log("File generation complete")
+    })
    })
 }
 
