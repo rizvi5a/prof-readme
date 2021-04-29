@@ -19,6 +19,42 @@ const questions = [
         name:"github",
         message:"Enter Github username :"
     }
+    ,
+    {
+        type:"input",
+        name:"Description",
+        message:"Project Description :"
+    }
+    ,
+    {
+        type:"input",
+        name:"Usage",
+        message:"Enter usage detaild :"
+    }
+    ,
+    {
+        type:"input",
+        name:"Testing",
+        message:"Enter testing requiremnets:"
+    }
+    ,
+    {
+        type:"input",
+        name:"email",
+        message:"Enter email:"
+    }
+    ,
+{
+        type:"input",
+        name:"Installation",
+        message:"Installation Details:"
+    }
+    ,
+    {
+        type:"input",
+        name:"Contribution",
+        message:"Contributors to the project:"
+    }
 ];
 
 // TODO: Create a function to write README file
@@ -33,14 +69,25 @@ function init() {
 # Project: ${userresponse.projectname}
 ### Developers Profile :https://github.com/${userresponse.github}
 ## Table of Contents
-*[Description](#description)
-*[Installation](#installation)
-*[License](#license)
-*
+* [Description](#description)
+* [Installation](#installation)
+* [License](#license)
+* [testing](#testing)
+* [Contact](#Contact)
 ## Description
 ${userresponse.description}
+
 ## License
 ![Github License](https://img.shields.io/badge/license-${userresponse.license}-blue.svg)
+## Contributos
+${userresponse.consolecontributors}
+## Installation
+${userresponse.installation}
+## Usage
+${userresponse.usage}
+## Contact
+If you have any question, feel free to contact me at
+${userresponse.email}
 
 `
     console.log(fileContent)
