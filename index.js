@@ -5,8 +5,8 @@ const fs =require ('fs');
 const questions = [
     {
         type:"input",
-        name:"projectname",
-        message:"Enter Project name?"
+        name:"Projectname",
+        message:"Enter Project Name?"
     },
     {
         type: "list",
@@ -28,33 +28,33 @@ const questions = [
     ,
     {
         type:"input",
-        name:"Usage",
-        message:"Enter usage detaild :"
+        name:"Installation",
+        message:"Enter installation details:"
     }
     ,
     {
         type:"input",
-        name:"Testing",
-        message:"Enter testing requiremnets:"
+        name:"Usage",
+        message:"Enter usage detail:"
+    }
+    ,
+    {
+        type:"input",
+        name:"Contribution",
+        message:" Enter contributors names:"
+    }
+    ,
+    {
+        type:"input",
+        name:"Tests",
+        message:" Enter testing requirements:"
     }
     ,
     {
         type:"input",
         name:"email",
         message:"Enter email:"
-    }
-    ,
-{
-        type:"input",
-        name:"Installation",
-        message:"Installation Details:"
-    }
-    ,
-    {
-        type:"input",
-        name:"Contribution",
-        message:"Contributors to the project:"
-    }
+    }  
 ];
 
 // TODO: Create a function to write README file
@@ -66,25 +66,31 @@ function init() {
    .then(function(userresponse){
        console.log(userresponse)
     var fileContent = `
-# Project: ${userresponse.projectname}
+# Project: ${userresponse.Projectname}
 ### Developers Profile :https://github.com/${userresponse.github}
 ## Table of Contents
 * [Description](#description)
-* [Installation](#installation)
 * [License](#license)
-* [testing](#testing)
+* [Installation](#installation)
+* [Usage] (#Usage)
+* [Contribution](#Contribution)
+* [Tests](#testing)
 * [Contact](#Contact)
 ## Description
-${userresponse.description}
+${userresponse.Description}
 
 ## License
 ![Github License](https://img.shields.io/badge/license-${userresponse.license}-blue.svg)
-## Contributos
-${userresponse.consolecontributors}
+
 ## Installation
-${userresponse.installation}
+${userresponse.Installation}
 ## Usage
-${userresponse.usage}
+${userresponse.Usage}
+## Contribution
+${userresponse.Contribution}
+## Tests
+${userresponse.Tests}
+
 ## Contact
 If you have any question, feel free to contact me at
 ${userresponse.email}
