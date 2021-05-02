@@ -72,7 +72,7 @@ function init() {
 * [Description](#description)
 * [License](#license)
 * [Installation](#installation)
-* [Usage] (#Usage)
+* [Usage](#Usage)
 * [Contribution](#Contribution)
 * [Tests](#testing)
 * [Contact](#Contact)
